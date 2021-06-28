@@ -8,7 +8,7 @@ python manage.py runserver
 ```
 Don't use django or test for the name(mysite)
 
-[manage.py](https://docs.djangoproject.com/en/3.2/ref/django-admin): Acommand-line utility to interact with Django project. 
+[manage.py](https://docs.djangoproject.com/en/3.2/ref/django-admin): Acommand-line utility to interact with Django project.   
 [url.py](https://docs.djangoproject.com/en/3.2/topics/http/urls/).
 ```
 python manage.py runserver 8080
