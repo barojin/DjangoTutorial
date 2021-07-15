@@ -191,7 +191,7 @@ https://docs.djangoproject.com/en/3.2/topics/templates/#template-loading
 - Post the package on a public repository, such as the Python Package Index (PyPI). packaging.python.org has a good [tutorial](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives) for doing this.
 - [venv](https://docs.python.org/3/tutorial/venv.html) is the good solution when work with several Django projects. Since this tool allows to maintain multiple isolated Python environments, each with its own copy of the libraries and package namespace.
 
-# [Patching] (https://docs.djangoproject.com/en/3.2/intro/contributing/)
+# [Patching](https://docs.djangoproject.com/en/3.2/intro/contributing/)
 Look at the link for the detail.
 In brief, we fork Django on Github and make the virtual environment to run. 
 Create a new branch for making changes, and use the Django test suite for the regression test.
