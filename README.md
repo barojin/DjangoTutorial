@@ -192,9 +192,9 @@ https://docs.djangoproject.com/en/3.2/topics/templates/#template-loading
 - [venv](https://docs.python.org/3/tutorial/venv.html) is the good solution when work with several Django projects. Since this tool allows to maintain multiple isolated Python environments, each with its own copy of the libraries and package namespace.
 
 # [Patching](https://docs.djangoproject.com/en/3.2/intro/contributing/)
-Look at the link for the detail.
-In brief, we fork Django on Github and make the virtual environment to run. 
-Create a new branch for making changes, and use the Django test suite for the regression test.
+Click the above link for the detail.  
+In brief, we fork Django on Github and make the virtual environment to run.   
+Create a new branch for making changes, and use the Django test suite for the regression test.  
 After all test cases are passed, write the documentation that one is for the new feature and another for the release note. Refer this link for documenting (https://docs.djangoproject.com/en/3.2/internals/contributing/writing-documentation/).
-And git commit, push on your local terminal, and do a pull request on Django GitHub page. 
+And git commit, push on your local terminal, and do a pull request on Django GitHub page.   
 For the detail of the git use for the Django, see it (https://docs.djangoproject.com/en/3.2/internals/contributing/writing-code/working-with-git/).
