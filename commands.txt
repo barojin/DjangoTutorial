@@ -1,0 +1,10 @@
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install Django 
+pip install djangorestframework django-cors-headers
+django-admin startproject [project name]
+python manage.py startapp [app name]
+python manage.py createsuperuser 
+// implement the django website
+docker build --tag django-tuto .
+docker run --publish 8000:8888 django-tuto
