@@ -1,3 +1,8 @@
+# Deploy to AWS
+### How to deploy dockerized django project to Amazon ECS
+
+- ps: commands.txt, requirements.txt for the dependencies from the venv, Dockerfile, .dockerignore.
+
 # Django Tutorial, making a polls app.
 
 # [Tuto 01](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)

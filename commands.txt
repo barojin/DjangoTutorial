@@ -5,6 +5,11 @@ pip install djangorestframework django-cors-headers
 django-admin startproject [project name]
 python manage.py startapp [app name]
 python manage.py createsuperuser 
+
 // implement the django website
-docker build --tag django-tuto .
-docker run --publish 8000:8888 django-tuto
+
+docker build --tag django-polls .
+docker run -d -p 8000:8888 django-polls
+
+docker tag 2fe8c6e430ff 210242344851.dkr.ecr.us-east-2.amazonaws.com/flask-docker-aws
+docker push 210242344851.dkr.ecr.us-east-2.amazonaws.com/flask-docker-aws
