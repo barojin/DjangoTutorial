@@ -1,0 +1,26 @@
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install Django 
+pip install djangorestframework django-cors-headers
+django-admin startproject [project name]
+python manage.py startapp [app name]
+python manage.py createsuperuser 
+
+# implement the django app
+
+docker build --tag django-polls:1.0.2 .
+docker run -d -p 8000:8000 django-polls
+# [host port]:[container port]
+
+# To get ecs-admin_accessKeys.csv, go IAM.Access management.Users.User name.Security credentials.Create access key
+# aws ecr get-login-password --region [region] | docker login --username AWS --password-stdin [account ID].dkr.ecr.[region].amazonaws.com
+
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 210242344851.dkr.ecr.us-east-2.amazonaws.com
+
+# docker tag [IMAGE ID of docker] 210242344851.dkr.ecr.us-east-2.amazonaws.com/django-polls
+
+docker tag 18852337f79f 210242344851.dkr.ecr.us-east-2.amazonaws.com/django-polls:1.0.2
+docker push 210242344851.dkr.ecr.us-east-2.amazonaws.com/django-polls:1.0.2
+
+# Use the eb cli, install $ pip install awsebcli
+eb init
